@@ -12,8 +12,8 @@ export const Navigation = (): ReactElement => {
     { name: 'Galeria', href: '#', current: false },
     { name: 'Kontakt', href: '#', current: false },
   ]
-  // @ts-expect-error
-  function classNames(...classes) {
+
+  function classNames(...classes: Array<string>) {
     return classes.filter(Boolean).join(' ')
   }
 
