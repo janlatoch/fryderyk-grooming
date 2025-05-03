@@ -1,5 +1,5 @@
 
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ReactElement } from 'react'
 import Image from "next/image"
@@ -12,7 +12,7 @@ export const Navigation = (): ReactElement => {
     { name: 'Galeria', href: '#', current: false },
     { name: 'Kontakt', href: '#', current: false },
   ]
-  //@ts-ignore
+  // @ts-expect-error
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
